@@ -367,7 +367,7 @@ class InstallCommand extends Command
      */
     protected function backupSitesFile(DrupalStyle $output)
     {
-        $root = $this->getDrupalHelper(->getRoot();
+        $root = $this->getDrupalHelper()->getRoot();
 
         if (!file_exists($root . '/sites/sites.php')) {
             return;
@@ -384,7 +384,7 @@ class InstallCommand extends Command
      */
     protected function restoreSitesFile(DrupalStyle $output)
     {
-        $root = $this->getDrupalHelper(->getRoot();
+        $root = $this->getDrupalHelper()->getRoot();
 
         if (!file_exists($root . '/sites/backup.sites.php')) {
             return;
